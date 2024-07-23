@@ -28,4 +28,11 @@ func main() {
 	sort.Ints(score)
 	fmt.Println(score)
 	fmt.Println(sort.IntsAreSorted(score))
+
+	var numList = []string{"one", "two", "three", "four", "five"}
+	fmt.Println(numList)
+	index := 2
+	numList = append(numList[:index], numList[index+1:]...)
+	fmt.Println(numList)
+
 }
